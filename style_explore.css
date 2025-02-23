@@ -1,0 +1,264 @@
+/*overall html file style*/
+* {
+    /*use `border-box` so that our widths don't change*/
+    box-sizing: border-box;
+    /*remove the margin entirely for everything*/
+    /*NOTE: in this case no need to add units*/
+    margin: 0;
+    /*remove the padding entirely for everything*/
+    /*NOTE: in this case no need to add units*/
+    padding: 0;
+    background-color: #aeceff;
+}
+
+/*header style*/
+header {
+    display: flex;
+    /*justify-content: space-between;*/
+    justify-content: flex-start;
+    /*INFO: might need to remove this from here*/
+    /*padding: 12px 16px;*/
+    padding: 28px 16px;
+}
+
+/*logo style*/
+.img_logo {
+    cursor: pointer;
+    margin-left: 51px;
+}
+
+/*un-ordered list style*/
+/*WARNING: in this case this acts like our navbar*/
+.website_links {
+    display: flex;
+    font-family: "Roboto", serif;
+    font-size: 19px;
+    list-style: none;
+    padding: 12px 16px;
+    /*padding: 18px 42px;*/
+    /*WARNING: not finalised*/
+    gap: 40px;
+    margin-left: 46px;
+    margin-right: 120px;
+}
+
+/*hyperlinks style*/
+/*NOTE: targeting hyperlink 'tag' only*/
+.website_links a {
+    color: black;
+    text-decoration: none;
+    padding: 12px 16px;
+    border: 3px solid transparent;
+    border-radius: 17px;
+}
+
+/*hyperlinks style when hovering cursor onit*/
+.website_links a:hover {
+    /*text-decoration: none;*/
+    padding: 12px 16px;
+    /*padding: 15px 42px;*/
+    border: 3px solid white;
+}
+
+/*user button styles for sign in*/
+.sign_is_button {
+    color: black;
+    text-decoration: none;
+    /*padding: 15px 42px;*/
+    padding: 12px 16px;
+    border: 3px solid transparent;
+    border-radius: 17px;
+    /*margin-left: auto;*/
+    margin-left: 640px;
+    font-family: "Roboto", serif;
+    font-size: 19px;
+}
+
+.sign_is_button:hover {
+    color: black;
+    text-decoration: none;
+    border: 3px solid white;
+}
+
+/*user button styles for register*/
+.register_button {
+    color: white;
+    background-color: rgba(5, 108, 177, 0.9);
+    text-decoration: none;
+    padding: 12px 16px;
+    border-radius: 17px;
+    margin-left: auto;
+    transition: all 0.3s ease 0s;
+    font-family: "Roboto", serif;
+    font-size: 19px;
+}
+
+.register_button:hover {
+    color: white;
+    background-color: rgba(5, 108, 177, 1);
+}
+
+.main_content {
+    display: flex;
+    justify-content: center;
+    margin: 96px 0px 0px 0px;
+    gap: 96px;
+}
+
+h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-90%, -70%);
+    font-family: "Poppins", serif;
+    font-size: 100px;
+    font-weight: 900;
+    font-style: italic;
+}
+
+#main_text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-98%, 250%);
+    font-family: "Poppins", serif;
+    font-size: 38px; font-weight: 900; font-style: italic;
+}
+
+.selection {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(30%, -40%);
+    width: 534px;
+    height: 640px;
+    border: 3px solid gray;
+    border-radius: 2px;
+    margin-left: 100px;
+}
+
+/*.selection_input input {*/
+/*    display: flex;*/
+/*    width: 400px;*/
+/*    height: 75px;*/
+/*    margin: 42px 0px 0px 65px;*/
+/*    background-color: white;*/
+/*    font-family: "Roboto", serif;*/
+/*    font-size: 22px;*/
+/*    font-weight: 900px;*/
+/*    text-decoration: none;*/
+/*}*/
+/**/
+
+.selection_input {
+    display: grid;
+    justify-content: center;
+}
+
+.activity {
+    width: 400px;
+    height: 75px;
+    background-color: white;
+    margin: 42px 0px 0px 0px;
+    /* font-family: "Roboto", serif;
+    font-size: 30px; */
+}
+
+.activity p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-90%, -645%);
+    background-color: transparent;
+    font-family: "Roboto", serif;
+    font-size: 30px;
+}
+
+.activity i {
+    background-color: transparent;
+}
+
+.location {
+    width: 400px;
+    height: 75px;
+    background-color: white;
+    margin: 38px 0px 0px 0px;
+}
+
+.location p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-90%, -365%);
+    background-color: transparent;
+    font-family: "Roboto", serif;
+    font-size: 30px;
+}
+
+.location i {
+    background-color: transparent;
+}
+
+.people {
+    width: 400px;
+    height: 75px;
+    background-color: white;
+    margin: 38px 0px 0px 0px;
+}
+
+.people p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-112%, -88%);
+    background-color: transparent;
+    font-family: "Roboto", serif;
+    font-size: 30px;
+}
+
+.people i {
+    background-color: transparent;
+}
+
+.duration {
+    width: 400px;
+    height: 75px;
+    background-color: white;
+    margin: 38px 0px 0px 0px;
+}
+
+.duration p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-90%, 200%);
+    background-color: transparent;
+    font-family: "Roboto", serif;
+    font-size: 30px;
+}
+
+.duration i {
+    background-color: transparent;
+}
+
+.date {
+    width: 400px;
+    height: 75px;
+    background-color: white;
+    margin: 38px 0px 0px 0px;
+}
+
+.date p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-145%, 480%);
+    background-color: transparent;
+    font-family: "Roboto", serif;
+    font-size: 30px;
+}
+
+.date i {
+    background-color: transparent;
+}
+

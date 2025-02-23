@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Roy Web Design Assignment</title>
+        <link href="style.css" rel="stylesheet">
+
+        <!-- online fonts -->
+        <!-- poppins font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+        <!-- roboto font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+        <!--font awesome icons-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    </head>
+    <body class="main_body">
+        <!-- header bar -->
+        <header>
+            <a href="index.html">
+                <img class="img_logo" src="assets/logo.png" alt="Main Logo">
+            </a>
+            <!-- navigation bar -->
+             <nav>
+               <!-- unordered list for links -->
+                <ul class="website_links">
+                    <!--our hyperlinks-->
+                    <li><a href="#">Home</a></li>
+                    <li><a href="discover.html">Discover</a></li>
+                    <li><a href="about_us.html">About Us</a></li>
+                    <li><a href="contact_us.html">Contact</a></li>
+                </ul>
+             </nav>
+            <!--left most buttons for user-->
+            <a class="sign_is_button" href="sign_in.html">Sign In</a>
+            <a class="register_button" href="register.html">Register</a>
+        </header>
+
+        <main>
+            <h1 class="main_heading">Discover Your<br>Destination</h1>
+
+            <p class="main_heading_text">Explore top destinations, plan unforgettable trips, and<br>find travel tips, guides and deals for every adventure.</p>
+
+            <!-- our images -->
+            <img class="tag_image" src="assets/woman_taj.png" alt="Woman Sitting On Boat Looking Taj Mahal">
+            <img class="balloon" src="assets/hot_air_ballons.png" alt="Picture of Hot Air Ballon">
+            <img class="woman_rock" src="assets/woman_mountain.png" alt="Woman Sitting Mountain">
+
+            <div class="rectangle_input">
+            </div>
+
+            <nav>
+                <!-- unordered list for user input -->
+                <ul class="selection">
+                     <li><button class="location_button">Location <i class="fa-solid fa-chevron-down"></i></button></li>
+                     <li><button class="date_button">Date <i class="fa-solid fa-chevron-down"></i></button></li>
+                     <li><button class="people_button">People <i class="fa-solid fa-chevron-down"></i></button></li>
+                </ul>
+            </nav>
+
+            <!--explore now button-->
+            <!--<button class="explore_now_button"><a href="about_us.html">Explore Now</a></button>-->
+            <button class="explore_now_button"><a href="explore_now.html">Explore Now</a></button>
+            <!--input fields for user-->
+            <input id="destination_input" type="text" placeholder="Enter Your Destination">
+            <input id="date_input" type="text" placeholder="When will it start">
+            <input id="num_people_input" type="text" placeholder="How many people">
+
+        </main>
+    </body>
+</html>

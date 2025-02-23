@@ -1,0 +1,282 @@
+/*overall html file style*/
+* {
+    /*use `border-box` so that our widths don't change*/
+    box-sizing: border-box;
+    /*remove the margin entirely for everything*/
+    /*NOTE: in this case no need to add units*/
+    margin: 0;
+    /*remove the padding entirely for everything*/
+    /*NOTE: in this case no need to add units*/
+    /* background-color: #aeceff; */
+}
+
+html {
+    background-color: #aeceff;
+}
+
+/*header style*/
+header {
+    display: flex;
+    /*justify-content: space-between;*/
+    justify-content: flex-start;
+    /*INFO: might need to remove this from here*/
+    /*padding: 12px 16px;*/
+    padding: 28px 16px;
+}
+
+/*logo style*/
+.img_logo {
+    cursor: pointer;
+    margin-left: 51px;
+}
+
+/*un-ordered list style*/
+/*WARNING: in this case this acts like our navbar*/
+.website_links {
+    display: flex;
+    font-family: "Roboto", serif;
+    font-size: 19px;
+    list-style: none;
+    padding: 12px 16px;
+    /*padding: 18px 42px;*/
+    /*WARNING: not finalised*/
+    gap: 40px;
+    margin-left: 46px;
+    margin-right: 120px;
+}
+
+/*hyperlinks style*/
+/*NOTE: targeting hyperlink 'tag' only*/
+.website_links a {
+    color: black;
+    text-decoration: none;
+    padding: 12px 16px;
+    border: 3px solid transparent;
+    border-radius: 17px;
+}
+
+/*hyperlinks style when hovering cursor onit*/
+.website_links a:hover {
+    /*text-decoration: none;*/
+    padding: 12px 16px;
+    /*padding: 15px 42px;*/
+    border: 3px solid white;
+}
+
+/*user button styles for sign in*/
+.sign_is_button {
+    color: black;
+    text-decoration: none;
+    /*padding: 15px 42px;*/
+    padding: 12px 16px;
+    border: 3px solid transparent;
+    border-radius: 17px;
+    /*margin-left: auto;*/
+    margin-left: 640px;
+    font-family: "Roboto", serif;
+    font-size: 19px;
+}
+
+.sign_is_button:hover {
+    color: black;
+    text-decoration: none;
+    border: 3px solid white;
+}
+
+/*user button styles for register*/
+.register_button {
+    color: white;
+    background-color: rgba(5, 108, 177, 0.9);
+    text-decoration: none;
+    padding: 12px 16px;
+    border-radius: 17px;
+    margin-left: auto;
+    transition: all 0.3s ease 0s;
+    font-family: "Roboto", serif;
+    font-size: 19px;
+}
+
+.register_button:hover {
+    color: white;
+    background-color: rgba(5, 108, 177, 1);
+}
+
+.main_heading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-150%, -178%);
+    font-family: "Poppins", serif;
+    font-size: 65px;
+    font-weight: 900;
+    font-style: italic;
+}
+
+.main_heading_text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-124%, -220%);
+    font-family: "Poppins", serif;
+    font-size: 20px;
+    font-weight: 900;
+    font-style: italic;
+}
+
+.tag_image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-10%, -130%);
+    width: 370px;
+    height: 250px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+}
+
+.balloon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(95%, -35%);
+    width: 372px;
+    height: 600px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+}
+
+.woman_rock {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-10%, -10%);
+    width: 370px;
+    height: 366px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+}
+
+.rectangle_input {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-95%, 140%);
+    width: 710px;
+    height: 114px;
+    background-color: white;
+    border-radius: 26px;
+}
+
+.selection {
+    display: flex;
+    list-style: none;
+    padding: 12px 16px;
+    /*padding: 18px 42px;*/
+    /*WARNING: not finalised*/
+    gap: 40px;
+    margin-left: 46px;
+    margin-right: 120px;
+}
+
+.selection button {
+    color: black;
+    font-family: "Roboto", serif;
+    font-size: 19px;
+    font-weight: bold;
+    background-color: white;
+    border: 2px solid transparent;
+}
+
+.explore_now_button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-90%, 195%);
+    color: white;
+    font-family: "Poppins", serif;
+    font-size: 20px;
+    font-weight: 900;
+    border-radius: 20px;
+    padding: 27px;
+    transition: all 0.3s ease 0s;
+    background-color: rgba(5, 108, 177, 0.9);
+    border: 2px solid transparent; 
+}
+
+.explore_now_button:hover {
+    background-color: rgba(5, 108, 177, 1);
+}
+
+.explore_now_button a {
+    color: white;
+    list-style: none;
+    text-decoration: none;
+}
+
+.location_button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-640%, 550%);
+}
+
+.location_button i {
+    background-color: white;
+}
+
+.date_button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-675%, 550%);
+}
+
+.date_button i {
+    background-color: white;
+}
+
+.people_button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-350%, 550%);
+}
+
+.people_button i {
+    background-color: white;
+}
+
+input {
+    color: black;
+    background-color: white;
+    font-family: "Roboto", serif;
+    font-size: 15px;
+    font-weight: 500;
+    font-style: italic;
+    border: 2px solid transparent;
+    border-radius: 5px;
+}
+
+#destination_input {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-425%, 970%);
+    width: 154px;
+}
+
+#date_input {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-388%, 970%);
+    width: 118px;
+}
+
+#num_people_input {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-245%, 970%);
+    width: 124px;
+}

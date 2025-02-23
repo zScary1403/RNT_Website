@@ -1,0 +1,159 @@
+/*overall html file style*/
+* {
+    /*use `border-box` so that our widths don't change*/
+    box-sizing: border-box;
+    /*remove the margin entirely for everything*/
+    /*NOTE: in this case no need to add units*/
+    margin: 0;
+    /*remove the padding entirely for everything*/
+    /*NOTE: in this case no need to add units*/
+    padding: 0;
+    background-color: #aeceff;
+}
+
+/*header style*/
+header {
+    display: flex;
+    /*justify-content: space-between;*/
+    justify-content: flex-start;
+    /*INFO: might need to remove this from here*/
+    /*padding: 12px 16px;*/
+    padding: 28px 16px;
+}
+
+/*logo style*/
+.img_logo {
+    cursor: pointer;
+    margin-left: 51px;
+}
+
+/*un-ordered list style*/
+/*WARNING: in this case this acts like our navbar*/
+.website_links {
+    display: flex;
+    font-family: "Roboto", serif;
+    font-size: 19px;
+    list-style: none;
+    padding: 12px 16px;
+    /*padding: 18px 42px;*/
+    /*WARNING: not finalised*/
+    gap: 40px;
+    margin-left: 46px;
+    margin-right: 120px;
+}
+
+/*hyperlinks style*/
+/*NOTE: targeting hyperlink 'tag' only*/
+.website_links a {
+    color: black;
+    text-decoration: none;
+    padding: 12px 16px;
+    border: 3px solid transparent;
+    border-radius: 17px;
+}
+
+/*hyperlinks style when hovering cursor onit*/
+.website_links a:hover {
+    /*text-decoration: none;*/
+    padding: 12px 16px;
+    /*padding: 15px 42px;*/
+    border: 3px solid white;
+}
+
+/*user button styles for sign in*/
+.sign_is_button {
+    color: black;
+    text-decoration: none;
+    /*padding: 15px 42px;*/
+    padding: 12px 16px;
+    border: 3px solid transparent;
+    border-radius: 17px;
+    /*margin-left: auto;*/
+    margin-left: 640px;
+    font-family: "Roboto", serif;
+    font-size: 19px;
+}
+
+.sign_is_button:hover {
+    color: black;
+    text-decoration: none;
+    border: 3px solid white;
+}
+
+/*user button styles for register*/
+.register_button {
+    color: white;
+    background-color: rgba(5, 108, 177, 0.9);
+    text-decoration: none;
+    padding: 12px 16px;
+    border-radius: 17px;
+    margin-left: auto;
+    transition: all 0.3s ease 0s;
+    font-family: "Roboto", serif;
+    font-size: 19px;
+}
+
+.register_button:hover {
+    color: white;
+    background-color: rgba(5, 108, 177, 1);
+}
+
+.description {
+    text-align: center;
+    font-family: "Poppins", serif;
+    font-size: 35px;
+    font-weight: 900;
+    margin: 0px 0px 0px 0px;
+}
+
+.description p {
+    font-family: "Poppins", serif;
+    font-size: 22px;
+}
+
+.destination_cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 80px 0px 0px 0px;
+    height: 536px;
+    gap: 105px;
+}
+
+.card_cliff_house,
+.card_pyramid,
+.card_eiffel {
+    width: 348px;
+    height: 516px;
+    background-color: white;
+    margin: auto;
+    border: 3px solid gray;
+    border-radius: 2px;
+    margin: 0;
+    padding: 0;
+}
+
+.card_cliff_house_img,
+.card_pyramid_img,
+.card_eiffel_img {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    margin: 46px 0px 0px 0px;
+    border-radius: 200px;
+}
+
+.card_cliff_house_img img {
+    border: 1px solid gray;
+    border-radius: 2px;
+}
+
+.card_pyramid_img img {
+    border: 1px solid gray;
+    border-radius: 2px;
+}
+
+.card_eiffel_img img {
+    border: 1px solid gray;
+    border-radius: 2px;
+}
